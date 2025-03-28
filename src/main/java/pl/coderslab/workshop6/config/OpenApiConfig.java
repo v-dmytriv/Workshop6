@@ -18,12 +18,12 @@ public class OpenApiConfig {
                         .version("1.0.1"));
     }
 
-//    @Bean
-//    public GroupedOpenApi movieOpenApi() {
-//        return GroupedOpenApi
-//                .builder()
-//                .group("movie")
-//                .packagesToScan("pl.coderslab.movietheatre.movie")
-//                .build();
-//    }
+    @Bean
+    public GroupedOpenApi movieOpenApi() {
+        return GroupedOpenApi
+                .builder()
+                .group("book")
+                .packagesToScan("pl.coderslab.workshop6.book")
+                .build();
+    }
 }
