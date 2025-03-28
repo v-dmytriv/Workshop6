@@ -10,12 +10,9 @@ import java.util.Optional;
 
 @Service
 @Primary
+@AllArgsConstructor
 public class BookService implements ServiceInterface {
     private final BookRepository repository;
-
-    public BookService(BookRepository repository) {
-        this.repository = repository;
-    }
 
     @Override
     public List<Book> findAll() {
